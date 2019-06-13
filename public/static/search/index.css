@@ -1,0 +1,25 @@
+.fromwarp {
+    padding: 0 24px;
+}
+
+.fromwarp .ant-form-item {
+    display: flex;
+    margin-bottom: 0px !important;
+}
+
+.fromwarp .ant-form-item-control-wrapper {
+    flex: 1;
+}
+
+.fromModal .ant-form-item {
+    display: flex;
+    margin-bottom: 0px !important;
+}
+
+.fromModal .ant-form-item-control-wrapper {
+    flex: 1;
+}
+
+.formrow {
+    margin-bottom: 10px;
+}

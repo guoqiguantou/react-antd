@@ -1,0 +1,156 @@
+.main {
+    min-height: 100vh;
+
+    .left {
+        z-index: 99;
+        box-shadow: 2px 0 6px rgba(0, 21, 41, 0.35);
+
+        .logo {
+            position: relative;
+            overflow: hidden;
+            transition: all .3s;
+            height: 32px;
+            background: rgba(255, 255, 255, .2);
+            margin: 16px;
+        }
+
+        .logodark {
+            position: relative;
+            overflow: hidden;
+            transition: all .3s;
+            height: 32px;
+            background: #ccc;
+            margin: 16px;
+        }
+
+    }
+
+    .header {
+        background: #fff;
+        padding: 0;
+        display: flex;
+        transition: all .2s;
+        // box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
+        width: 100%;
+
+        .trigger {
+            font-size: 18px;
+            line-height: 64px;
+            padding: 0 24px;
+            cursor: pointer;
+            transition: color .3s;
+
+            &:hover {
+                color: #1890ff;
+            }
+        }
+
+    }
+
+    .tab {
+        box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
+        // background: #fff;
+
+
+    }
+
+    .content {
+        margin: 24px 24px 0;
+        // padding: 24px;
+        // background: #fff;
+    }
+
+    .footer {
+        text-align: center
+    }
+
+    .openbtns {
+        position: fixed;
+        top: 240px;
+        right: 0px;
+        z-index: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 48px;
+        height: 48px;
+        font-size: 18px;
+        text-align: center;
+        border-radius: 4px 0 0 4px;
+        cursor: pointer;
+        pointer-events: auto;
+    }
+}
+
+.openbtn {
+    position: absolute;
+    top: 240px;
+    right: 300px;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 4px 0 0 4px;
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+//固定头部
+.fixedheader {
+    .header {
+        position: fixed;
+        right: 0px;
+        top: 0px;
+        width: calc(100% - 250px);
+        z-index: 2;
+    }
+
+    .content {
+        margin-top: 128px;
+    }
+
+    .tab {
+        // margin-top: 64px;
+        position: fixed;
+        right: 0px;
+        top: 64px;
+        width: calc(100% - 250px);
+        z-index: 2;
+    }
+
+    .headercollapsed {
+        width: calc(100% - 80px);
+    }
+
+    .tabcollapsed {
+        width: calc(100% - 80px);
+    }
+
+}
+
+//固定左侧
+.fixedLeft {
+    .left {
+        overflow-y: auto;
+        height: 100vh;
+        position: fixed;
+        left: 0;
+    }
+
+    .right {
+        margin-left: 250px;
+    }
+
+
+    .rightcollapsed {
+        margin-left: 80px !important;
+    }
+
+
+
+
+}
